@@ -21,7 +21,8 @@ The Rayon crate is a lightweight, **data-parallelism library** designed to make 
 To use Rayon in your Rust project, add it to your `Cargo.toml` dependencies:
 
 ```toml
-[dependencies] rayon = "1.7"
+[dependencies]
+rayon = "1.7"
 ```
 
 Run `cargo build` to download and compile the dependency.
@@ -155,3 +156,19 @@ As an exercise, use Rayon to parallelize a computation on a large dataset. Write
 3. **Profile Your Code**: Use tools like `cargo flamegraph` to measure performance improvements.
 
 Rayon significantly simplifies **parallel programming in Rust**, enabling developers to achieve higher performance with less effort. By leveraging **parallel iterators**, **automatic thread management**, and **data safety**, Rayon makes it easier to harness the power of multi-core processors.
+
+--------
+
+You will find in this repository the **result of this exercise**, in `rust_rayon` directory...
+
+```bash
+.
+├── rust_rayon
+│   ├── src
+│   │   └── main.rs
+│   ├── Cargo.lock
+│   ├── Cargo.toml
+│   ├── lorem.txt
+│   └── test.txt
+└── README.md
+```
